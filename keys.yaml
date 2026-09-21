@@ -1,0 +1,17 @@
+# The addresses this host answers for, and the OpenPGP key each one resolves
+# to. `scripts/build-wkd.py` renders this file into the Web Key Directory
+# under `site/.well-known/openpgpkey/`. The key material lives in
+# `pubkeys/<fingerprint>.asc`; a fingerprint here without its block fails
+# the build, and a block whose fingerprint disagrees with its name fails too.
+#
+# One key may serve several addresses. Every address is a local part of the
+# domain below; the domain is the WKD directory name.
+domain: martinzeman.net
+
+keys:
+    # The hardware key: certify on the YubiKey, sign 29DD2145CE7A818929459B2649F08103D3DA399E.
+    # The runedeck ceremony pins the signing subkey (skeleton KEYS).
+    - fingerprint: 786F851F8AE345F5A98B822EC92F47D08BCD9F72
+      addresses:
+          - git
+          - github.com

@@ -1,0 +1,34 @@
+# Local state and credentials
+.wrangler/
+.specstory/
+.entire/
+.env
+.env.*
+.envrc
+.pypirc
+.streamlit/secrets.toml
+.abstra/
+config.yaml
+.DS_Store
+
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.rumdl_cache/
+
+# Local agent and workspace state
+.claude/
+.codex/
+.gemini/
+.opencode/
+.agents/
+.workspaces/
+.worktrees/
+.rune-comments.yaml
+.rune-transaction/
+.rune-archive.lock
+.interop/
+.trash/

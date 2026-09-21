@@ -1,0 +1,13 @@
+{
+    // Static assets only: the Web Key Directory under site/ is served as-is.
+    // `wrangler deploy` creates the custom-domain record in the martinzeman.net zone.
+    "name": "openpgpkey-martinzeman-net",
+    "compatibility_date": "2026-07-01",
+    "assets": {
+        "directory": "site",
+        "not_found_handling": "none"
+    },
+    "routes": [
+        { "pattern": "openpgpkey.martinzeman.net", "custom_domain": true }
+    ]
+}

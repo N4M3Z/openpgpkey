@@ -1,0 +1,5 @@
+# WKD clients read the key as raw bytes and browsers must be allowed to fetch it.
+/.well-known/openpgpkey/*
+  Content-Type: application/octet-stream
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
